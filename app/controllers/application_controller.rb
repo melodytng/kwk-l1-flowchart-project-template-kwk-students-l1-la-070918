@@ -28,6 +28,6 @@ class ApplicationController < Sinatra::Base
     a5 = params[:ans5]
     a6 = params[:ans6]
     @footprint = quiz(a1, a2, a3, a4, a5, a6)
-    return erb :results
+    erb :results
   end  
 end
