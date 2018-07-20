@@ -1,24 +1,165 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Enviro Bro</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<nav>
+      <ul>
+        <li><a href="#">Home +</a>
+        <ul>
+          <li><a href="pacific" >Pacific Coast</a></li>
+          <li><a href="mtn.html" target="_self">Mountain</a></li>
+          <li><a href="east.html" target="_self">East Coast</a></li>
+          <li><a href="additional.html" target="_self">Additional Resources</a></li>
+          <li><a href="authors.html" target="_self">The Creators</a></li>
+      
+        </ul>
+        </li>
+        
+      </ul>
+  </nav>
+ </head>
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url("http://1.bp.blogspot.com/-oFjQOMBmwTc/UQI4N8xHgrI/AAAAAAAAPEM/8S0tU-z_VYk/s1600/Lake+HQ+Pack+Beautiful+Nature+HD+Wallpapers.jpg");
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
 
-    <title>KWK Flowchart Application</title>
+button {
+  background-color: lightgreen; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+ * {
+  margin:0;
+  padding:0;
+}
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+/*nav {*/
+/*  width:100%;*/
+/*  height: 60px;*/
+/*  background-color: #fff;*/
+/*}*/
 
-  </head>
+nav p {
+  font-family:arial;
+  color: #222;
+  font-size: 22px;
+  line-height: 55px;
+  float: left;
+  padding: 0px 20px;
+}
 
-  <body>
-    <main role="main" class="container">
-      <%= yield %>
-    </main>
-  </body>
+nav ul {
+  float: left;
+}
+
+nav ul li {
+  float:left;
+  list-style: none;
+  position: relative;
+  padding: 25px 0px;
+}
+
+nav ul li a{
+  display: block;
+  font-family:arial;
+  color: #fff;
+  font-size: 14px;
+  padding: 0px 0px;
+  text-decoration: none;
+  
+}
+
+nav ul li ul {
+  display: none;
+ position: absolute;
+ /*background-color: #fff;*/
+ padding:5px;
+   border-radius:0px 0px 4px 4px;
+}
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li  {
+  width: 150px;
+  border-radius: 4px;
+}
+
+nav ul li ul li a {
+   color:#fff;
+}
+
+nav ul li ul li a:hover {
+ background-color: gray;
+   color:#fff;
+}
+
+div li a {
+  float: left;
+}
+
+div a {
+  color: lightgreen;
+}
+
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <!--<button type="button">Click Me!</button>-->
+    <!--<form method = POST>-->
+    <nav>
+      <ul>
+        <li><a href="#">Home +</a>
+        <ul>
+          <li><a href="pacific.erb">Pacific Coast</a></li>
+          <li><a href="mtn.html" target="_self">Mountain</a></li>
+          <li><a href="east.html" target="_self">East Coast</a></li>
+          <li><a href="additional.html" target="_self">Additional Resources</a></li>
+          <li><a href="authors.html" target="_self">The Creators</a></li>
+      
+        </ul>
+        </li>
+        
+      </ul>
+    </nav>
+    </form>
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">ENVIRO BRO</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    
+    
+    <div class="w3-large w3-center">
+    <a href="quiz"><button type="button" >How Green are you?</button>
+    <!--<form method="get" action=""</form>-->
+    </div>
+  </div>
+  
+  <div class="w3-display-topright w3-padding-large w3-xlarge">
+
+ <a class="twitter-timeline" data-width="400" data-height="400" href="https://twitter.com/Greenpeace?ref_src=twsrc%5Etfw">Tweets by Greenpeace</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  </div>
+
+</div>
+
+</body>
 </html>
