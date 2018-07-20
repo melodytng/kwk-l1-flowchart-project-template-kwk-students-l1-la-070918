@@ -2,10 +2,10 @@
 
 class ApplicationController < Sinatra::Base
 
-require 'sinatra'
-    configure do
-  	set :views, "app/views"
-  	set :public_folder, "public"
+
+   configure do
+  	set :views, 'app/views'
+  	set :public_folder, 'public'
   end
   
   get '/' do
