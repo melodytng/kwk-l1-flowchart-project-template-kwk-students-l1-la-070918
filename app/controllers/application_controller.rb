@@ -16,7 +16,7 @@ require 'sinatra'
     return erb :quiz 
   end
   
-  get '/pacific.erb' do
+  get '/pacific' do
     erb :pacific
   end
   
