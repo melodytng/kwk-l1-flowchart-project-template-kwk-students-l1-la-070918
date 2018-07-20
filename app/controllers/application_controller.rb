@@ -9,11 +9,11 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/' do
-    return erb :layout
+    erb :layout
   end
   
   post '/' do
-    return erb :quiz 
+    erb :quiz 
   end
   
   get '/pacific' do
